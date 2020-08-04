@@ -1,0 +1,27 @@
+
+            .login-title {
+                color: red;
+                width: 300px;
+                height: 200px;
+                background-image: url('https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/guest/image/pUYepEU_gaLC-J3uFlg9IywX5cg.PNG');
+                background-position: center;
+                background-size: cover;
+                border-radius:: 10px;
+                text-align: center;
+                padding-top: 40px;
+                color: red;
+                font-size: 20px;
+
+            }
+
+            .login-title2 {
+                color: aqua;
+                width: 200px;
+                height: 100px;
+                font-size: 10px;
+
+            }
+
+            .wrap {
+                margin: 10px auto;
+                width: 300px;

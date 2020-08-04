@@ -1,0 +1,114 @@
+<!--이것은 버튼 클릭해서 홈페이지로 넘어가는 코딩-->
+<button type="button"><a href="https://www.naver.com/">GO TO HOME</button>
+            </a>
+
+<!--이것은 구글폰트를 집어넣는 예제-->
+링크는 <head>    </head>=사이에 집어넣고 <link href="https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap" rel="stylesheet">
+ css는 <style>    </style>=사이에 집어넣는데  앞에별표시 꼭 시작하고 괄호 열고 해야함 * {font-family: 'Yeon Sung', cursive;}
+
+
+<!--CSS 파일 분리 및 불러오기 코딩-->
+<link rel="stylesheet" type="text/css" href = "style_01.html".css">
+                                               (파일이름)
+<!--스크립트 함수-->
+<script>
+            function sayhello() {
+                alert('안녕')
+
+            }
+</script>
+<!--함수 버튼에 안녕 넣기-->
+ <button type="button" class="btn btn-primary">기사저장</button> (원래)
+<button onclick="sayhello() "type="button" class="btn btn-primary">기사저장</button> (변경)
+
+<!--함수 실행 명령어-->
+console.log
+변수 대입( a = 2 )의 의미: '오른쪽에 있는 것을 왼쪽에 넣는 것!'
+let 으로 변수를 선언합니다.
+
+let temp = 20;
+console.log(temp);
+temp = 'Harry'
+console.log(temp);
+
+// 변수는 값을 저장하는 박스예요.
+// 한 번 변수를 선언했으면, 다시 선언하지 않고 값을 넣습니다.
+
+let num1 = 1
+let num2 = 2
+
+console.log(num1 + num2) // 실행하면 3 출력
+console.log(num1 / num2) // 실행하면 0.5 출력
+
+let firstName = 'Harry'
+let lastName = 'Potter'
+
+console.log(firstName + lastName) // 실행하면 'HarryPotter'
+console.log(firstName + ' ' + lastName) // 실행하면 'Harry Potter'
+console.log(lastName + num1) // 실행하면 Harry1 -> 문자+숫자를 하면, 숫자를 문자로 바꾼 뒤 수행합니다.
+
+let a = 20;
+let b = 7;
+
+console.log(a % b); // 6
+
+<!--조건문-->
+function compareNinety(num){
+	if (num > 90) {
+		alert('90보다 커요!')
+	} else {
+		alert('90보다 작아요!')
+	}
+}
+
+compareNinety(30);
+
+<!--조건문-->
+// 함수를 정의하기
+function isAdult(person) {
+	if (person['age'] > 19){
+		return true;
+	} else {
+		return false;
+	}
+}
+
+// 함수를 사용하기
+let person = {'name':'Harry','age':24}
+let result = isAdult(person);
+console.log(result) // true
+
+
+
+<!--And 조건과 OR조건 -->
+
+// AND 조건 : 모든 조건들이 true 여야 true
+// 나이가 20과 같거나 크고 30보다 작은 경우 true
+function isTwenty(person) {
+	if (person['age'] >= 20 && person['age'] < 30){
+		return true;
+	} else {
+		return false;
+	}
+}
+
+// OR 조건 : 조건 중 하나라도 true이면, true!
+// 나이가 20보다 작거나, 30보다 크면 true
+function isNotTewnty(person) {
+	if (person['age'] < 20 || person['age'] >= 30){
+// not(!) 을 사용해 !(20대인 조건) 으로 판별식을 만들 수도 있습니다.
+// 결과를 얻는 방법은 여러 가지! 가독성을 고려해 판별식을 만들어보세요!
+// if (!(person['age'] >= 20 && person['age'] < 30)){
+
+		return true;
+	} else {
+		return false;
+	}
+}
+
+console.log(person); // person에 값이 있는지 확인하기
+
+result = isTwenty(person);
+console.log(result);
+
+console.log(isNotTewnty(person));
